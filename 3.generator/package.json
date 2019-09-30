@@ -1,0 +1,16 @@
+{
+  "name": "3.generator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "1.generator.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/polyfill": "^7.6.0",
+    "co": "^4.6.0"
+  }
+}

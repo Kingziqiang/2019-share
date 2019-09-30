@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // v8 垃圾回收机制 引用计数的方式
+        function MyFn(){}   
+        let fn = new MyFn(); 
+        // WeakMap不会导致内存泄漏
+        let map = new WeakMap([[fn,'123'],[{a:1},123]]);
+        // map.set(fn,123)
+        // map.set({a:1},123)
+        fn = null;
+    </script>
+</body>
+</html>
