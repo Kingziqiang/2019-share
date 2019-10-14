@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container"></div>
+    <script>
+        // mutationObserver
+        let o = new MutationObserver(function () {
+            console.log(container.children)
+        }); // vue 中除了then的微任务
+        o.observe(container,{
+            childList:true
+        })
+        for(let i = 0 ; i < 5;i++){
+            container.appendChild(document.createElement('p'));
+        }
+
+        // setTimeout(function(){
+        //     console.log('settiemout')
+        // }, 0);
+        // // 浏览器用不到  ie9 下
+        // setImmediate(function() {
+        //         console.log('setImmidate')
+        // })
+    </script>
+</body>
+</html>
