@@ -1,4 +1,4 @@
-
+﻿
 <!-- 循环可能根据有没有children 来显示 是submenu menu-item -->
   <div>
     <template v-for="menu in data">
