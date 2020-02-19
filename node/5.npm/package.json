@@ -1,0 +1,29 @@
+{
+  "name": "pack-zf",
+  "version": "2.2.1",
+  "main": "index.js",
+  "scripts": {
+    "mime": "mime xxx.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "pack-zf": "./bin/www.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "description": "",
+  "dependencies": {
+    "jquery": "^3.4.1",
+    "mime": "^2.4.4"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.7.2"
+  },
+  "peerDependencies": {
+    "lodash": "1.0.0"
+  },
+  "bundledDependencies": [
+    "jquery"
+  ]
+}
